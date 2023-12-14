@@ -1,9 +1,3 @@
-
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Navbar } from "./Navbar.jsx";
-import { Cart } from "./Cart";
-import { Shop } from "./Shop.jsx";
 import { ShopContextProvider } from "./ShopContext";
 
 function App() {
