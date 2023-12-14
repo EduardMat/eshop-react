@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ShopContext } from "./ShopContext";
+import { ShopContext } from "./Shop-Context.jsx";
 import { Products } from "./Item.js";
 import { CartItem } from "./Cart-Item";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +18,6 @@ export const Cart = () => {
       </div>
 
       <div className="cartItems">
-        // eslint-disable-next-line
         {Products.map((product) => {
           if (cartItems[product.id] !== 0) {
             return <CartItem data={product} />;
